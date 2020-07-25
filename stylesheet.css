@@ -1,14 +1,17 @@
 body{
     background-color: #F3F3EB;
     <!--background-image: url("wallpaper.jpg");-->
-    font-family: "Helvetica", Helvetica, Arial, sans-serif;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-h2, p {
+p, h2, h3{
     margin: 20px;
+}
+h1{
+    text-align: center;
 }
 h1 {
     text-align: left;
-    font-size: 28px;
+    font-size: 24px;
     font-style: normal;
     font-variant: normal;
     font-weight: 600;
@@ -17,18 +20,18 @@ h1 {
 h2 {
     color: #F9D50B;
     <!--text-shadow: 2px 2px 2px #FFCECE;-->
-    font-size: 24px;
+    font-size: 20px;
     font-style: normal;
     font-variant: all-petite-caps;
     font-weight: 700;
     line-height: 16px;
 }
 h3 {
-    background-color: #96A88F;
+    color: #96A88F;
     font-size: 16px;
     font-style: normal;
     font-variant: normal;
-    font-weight: 700;
+    font-weight: 1000;
     line-height: 16px;
 }
 p {
