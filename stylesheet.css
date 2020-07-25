@@ -1,0 +1,66 @@
+body{
+    background-color: floralwhite;
+    background-image: url("wallpaper.jpg");
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+h2, p {
+    margin: 20px;
+}
+h1 {
+    text-align: left;
+    font-size: 28px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 600;
+    line-height: 26.4px;
+}
+h2 {
+    color: #FF96a7;
+    text-shadow: 2px 2px 2px #FFCECE;
+    font-size: 24px;
+    font-style: normal;
+    font-variant: all-petite-caps;
+    font-weight: 700;
+    line-height: 15.4px;
+}
+h3 {
+    background-color: #FFB4BC;
+    font-size: 16px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 700;
+    line-height: 15.4px;
+}
+p {
+    font-size: 20px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: bold;
+    line-height: 20px; }
+.footer {
+    color: pink;
+    background-color: transparent;
+    text-align: center;
+    padding: 0px;
+    bottom: 0;
+    font-weight: bold;
+}
+.boxed {
+    border: 2px solid black;
+    border-radius: 25px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 10px;
+}
+.left img {
+    float: left;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.right img {
+    float: right;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}

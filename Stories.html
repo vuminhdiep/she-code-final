@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BCB Stories</title>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <script src="jquery-3.4.1.min.js"></script>
+    <link rel="icon" href="image/BCBIcon.PNG">
+    <style>
+        h2{
+            text-align: center;
+        }
+        p.indented{
+            text-indent: 22px;
+            margin-left: 100px;
+            margin-right: 100px;
+            line-height: 36px;
+        }
+
+    </style>
+</head>
+<body>
+<div id="navBar"></div>
+
+<div class="bg-img"></div>
+
+<h1>Stories from Patients of Breast Cancer</h1>
+<h3>Please read below stories from previous patients of breast cancer!</h3>
+<div class="boxed">
+    <h2>Story 1: JNG | Age: 45</h2>
+    <p class="indented">
+        The radiologist came out after my routine mammogram and said that there was an area that he thought
+    needed to get biopsied. I was in complete shock that I could possibly have breast cancer. I convinced myself
+    that the biopsy would be negative. However, to my amazement, the biopsy was positive and it showed that I did have
+    breast cancer. I was sure that it would be very very early and very small and therefore plan to do a lumpectomy
+    followed by radiation. Once again I was surprised. It turned out that the margins from the piece that was removed
+    were positive and more extensive surgery was required. I scheduled a bilateral mastectomy. I was so frightened.
+    I had so many questions.I cried every night in the shower. But I was fortunate my PET scan was negative -
+    indicating that there was no spread outside of the breast. Although the recovery from surgery itself was
+    painful, it was not long before I was back at work and in my usual state of health. I went back to running and
+    exercising regularly and I no longer cried! In fact I felt very happy and very fortunate!! I have to say that
+    the experience taught me a lot, allowed me to meet people that I might not have met, gave me perspective, and I can
+    honestly say that I am truly grateful that I did the surgery and I am a happy person!! I have spoken to many
+    people before there surgery and I would be happy to help anyone else going through the same procedure.
+    I wish all of you health and happiness.
+    </p>
+</div>
+
+<div class="boxed">
+<h2>Story 2: MN | Age: 46</h2>
+<p class="indented">
+    I was 46 years old when I was diagnosed with breast cancer. I ended up having to do a bilateral mastectomy but I
+    can honestly say it was one of the best things I ever did!! My kids were 10, 13 and 14 years old. I think one of
+    the hardest parts in the beginning was not knowing what the future would bring and deciding whether or not I was
+    going to talk to my kids about what was happening. At first I decided that way I would not tell them because I
+    didn’t want to upset them, worry them. However one of my friends texted me well intentioned thoughts saying:
+    “we’re going to get through this together we’re all working with you!!” For some reason my daughter read the text
+    looked at me and said “oh my God you have breast cancer!” I really didn’t know how to respond because yes I did
+    have breast cancer but no I wasn’t ready to discuss this with her or my younger children. I knew I had to be
+    honest. I felt like honesty was so important in my family. And I expected my children to be honest with me.
+    So I did tell her but, yes, I also said that we were going to do surgery and everything was going to be OK!!
+    I think that once the information was out and in the family it was actually a relief for me and my husband.
+    We did tell each child separately and they were so incredibly supportive. I was incredibly positive, optimistic,
+    but did share the fact that I had to have surgery. I was fortunate to have a great support system and I know from
+    them now that they were happy they were able to help in any way they could. Getting me a cup I couldn’t reach from
+    a high cupboard, carrying a plate to the table, going downstairs to get the mail we’re all very appreciated
+    helpful tasks that made a difference. I could really feel the love. As a family we walked in Breast Cancer Walk
+    and raised money for breast cancer research. This was a way that we could give back and give to others who are
+    having similar experiences. Today I feel so happy that I am in a place with such an amazing close family.
+</p>
+</div>
+
+<div class="boxed">
+<h2>Story 3: CH | Age: 50</h2>
+<p class="indented">
+    I went to see my doctor for a routine check up. During the check up she told me that she felt a small lump in my
+    left breast. She called one of her radiology colleagues to see if she would do a mammogram the same day. I think
+    the fact that she wanted me to do the mammogram immediately was the most frightening aspect. I left her office and
+    went immediately to the radiologist who did a mammogram, an ultrasound and then a biopsy. My doctor and the
+    radiologist spoke and then I talk to my Doctor Who was incredibly supportive and comforting and let me know that
+    she was going to help me work through whatever findings we had. I can’t remember if my results came back the next
+    day or two days later but when my doctor called me to tell me that there was an early breast cancer we had a plan
+    in place. I met with a breast cancer surgeon and proceeded with a lumpectomy followed by radiation. After my
+    oncology type results came back I met with two different oncologists because my results were in a gray zone.
+    It wasn’t clear whether or not chemotherapy would add a lot to my treatment. There was some evidence that having
+    chemotherapy might decrease my chances of having a recurrence. My suggestion here when you are given a choice and
+    doctors are not sure of which you should do is just speak to your doctor. I had many conversations with all four
+    of my new doctors my gynecologist my internist my oncologist and my radiologist. I feel like together we made the
+    best decision for me. I ended up doing the chemotherapy and although it was a challenging part of my life it’s now
+    behind me and I’m happy that I did it. I know it’s not right for everyone. I’ve certainly gotten a lot more
+    exposure to the medical community and I really appreciate the care that my doctors have given me! I think the
+    thing that got me through the most was knowing that I had people that I could call at anytime who had gone through
+    what I was. I could reach out to my breast cancer support network, my doctors and my friends.
+</p>
+</div>
+
+<div class="footer">
+    <p>Created by An, Gio, Jon, and Minh for csc 240 - 2020</p>
+</div>
+
+<script>
+    $.get("NavBar.html", function(data){
+        $("#navBar").replaceWith(data);
+    });
+</script>
+
+</body>
+</html>

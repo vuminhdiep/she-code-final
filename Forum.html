@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Forum</title>
+    <script src="jquery-3.4.1.min.js"></script>
+    <link rel="icon" href="image/BCBIcon.png">
+</head>
+<body>
+
+<div id="navBar"></div>
+
+<a id="nabblelink" href="http://breast-cancer-buddies.198701.n8.nabble.com/">Breast Cancer Buddies</a>
+
+<div id="nabbleforum">
+</div>
+
+<script>
+    $.get("NavBar.html", function(data){
+        $("#navBar").replaceWith(data);
+    });
+
+    var link=document.getElementById("nabblelink");
+    if (link != null) {
+        link.style.display="none";
+        var e = document.createElement("script");
+        e.src = 'http://breast-cancer-buddies.198701.n8.nabble.com/embed/JsEmbed.jtp?site=198701&node=1&url=' + encodeURIComponent(location.href);
+        e.type="text/javascript";
+        document.getElementsByTagName("head")[0].appendChild(e);
+    }
+
+    document.write(new Date ());
+
+</script>
+
+<div class="footer">
+    <p>She Code 2020</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!--
+To put in other html files at the top of the body.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nav Idea</title>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="jquery-3.4.1.min.js"></script>
+    <style>
+        .navButtons {
+
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-size: 14px; font-style: normal;
+            font-variant: normal;
+            font-weight: 500;
+            line-height: 3px;
+
+            background-color: transparent;
+
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            grid-gap: 10px;
+            padding-left: 10px;
+            padding-bottom: 0px;
+            padding-right: 10px;
+            padding-top: 0px;
+            align-items: center;
+            height: 65px;
+        }
+
+        a {
+            background-color: transparent;
+            border: 2px solid black;
+            border-radius: 5%;
+            color: black;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            transition-duration: 0.4s;
+        }
+
+        a:hover {
+            background-color: #FFB4BC;
+            color: white;
+        }
+
+        .navArrow {
+            background-color: transparent;
+        }
+    </style>
+    <link rel="stylesheet" href="../../Desktop/stylesheet.css">
+</head>
+<body>
+    <nav class="fullNav" id="fullNav">
+        <div class="navButtons" id="nav">
+            <a href="Homepage.html" type="button" id="home">
+                <i class="fa fa-fw fa-home"></i>
+                Homepage
+            </a>
+            <a href="Stories.html" type="button" id="story">
+                <i class="fa fa-fw fa-book"></i>
+                Stories
+            </a>
+            <a href="Tips.html"type="button" id="tips">
+                <i class="fa fa-fw fa-lightbulb-o"></i>
+                Tips & Tricks
+            </a>
+            <a href="Forum.html"type="button" id="forum">
+                <i class="fa fa-fw fa-user-circle-o"></i>
+                Forum
+            </a>
+            <a href="Contact.html" type="button" id="contact">
+                <i class="fa fa-fw fa-phone"></i>
+                Contact
+            </a>
+            <input type="text" placeholder="Search">
+        </div>
+        <div class="navArrow">
+            <i id="collapse" class="fa fa-fw fa-arrow-up"></i>
+        </div>
+        <script>
+            var myNav = $("#nav");
+            $("#collapse").click(function() {
+                myNav.toggle("normal");
+                switchArrow();
+            });
+
+            function switchArrow() {
+                var arrow = document.getElementById("collapse");
+                if (arrow.className === "fa fa-fw fa-arrow-up") {
+                    arrow.className = "fa fa-fw fa-arrow-down";
+                } else {
+                    arrow.className = "fa fa-fw fa-arrow-up";
+                }
+            }
+        </script>
+    </nav>
+</body>
+</html>
