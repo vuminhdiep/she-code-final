@@ -27,6 +27,7 @@
 <!--        var txtFile = new XMLHttpRequest();-->
 <!--        // txtFile.open("GET", "C:\\Users\\Asus\\OneDrive\\Tài liệu\\Downloads\\Online-Courses-Learning\\Coursera\\Using Git for Distributed Development\\Week-2\\Excercise\\she-code-final\\map-final.csv", true);-->
 <!--        console.log(txtFile);-->
+
         $.ajax({
             type: "GET",
             url: "map-final.csv",
@@ -44,7 +45,7 @@
                         <th style="width:20%;">${e[1]}</th>
                             <th style="width:20%;">${e[2]}</th>
                         <th style="width:20%;">${e[3]}</th>
-                                        <th style="width:25%;">${e[4]}</th>
+                                        <th style="width:20%;">${e[4]}</th>
 
                     `
                   let column = document.createElement('tr');
@@ -56,11 +57,205 @@
 
     </script>
 
-        <table id="myTable">
-            <tr class="header">
+<!--    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for category..">-->
+<!--    <table id="myTable">-->
+<!--        <tr class="header">-->
+<!--            <th style="width:20%;">Category</th>-->
+<!--            <th style="width:20%;">Venue name</th>-->
+<!--            <th style="width:20%;">Address</th>-->
+<!--            <th style="width:20%;">Phone number</th>-->
+<!--            <th style="width:20%;">Note</th>-->
+<!--        </tr>-->
+<!--        <tr>-->
+<!--            <td>THU GOM VỎ MỲ TÔM GÓI TẠI HÀ NỘI</td>-->
+<!--            <td>Dũng Sĩ Tái Chế Việt Nam</td>-->
+<!--            <td>tòa nhà N9, chung cư Đồng Tàu, Thịnh Liệt, Hoàng Mai, Hà Nội</td>-->
+<!--            <td>343787174</td>-->
+<!--            <td></td>-->
 
-            </tr>
-        </table>
+<!--        </tr>-->
+<!--        <tr>-->
+<!--            <td>ỐNG HÚT NHỰA ĐÃ QUA SỬ DỤNG-->
+<!--            </td>-->
+<!--            <td>Café Little Fish House-->
+<!--            </td>-->
+<!--            <td>Nhà số 4, ngách 41, ngõ 32 đường Bưởi, Ba Đình(parking) / cuối ngõ 101 Đào Tấn, Hà Nội-->
+<!--            </td>-->
+<!--            <td></td>-->
+<!--            <td></td>-->
+
+<!--        </tr>-->
+<!--        <tr>-->
+<!--            <td>ỐNG HÚT NHỰA ĐÃ QUA SỬ DỤNG-->
+<!--            </td>-->
+<!--            <td>Grape Garden-->
+<!--            </td>-->
+<!--            <td>61 Trần Điền, Định Công, Hoàng Mai, Hà Nội-->
+<!--            </td>-->
+<!--            <td></td>-->
+<!--            <td></td>-->
+
+<!--        </tr>-->
+<!--        <tr>-->
+<!--            <td>ỐNG HÚT NHỰA ĐÃ QUA SỬ DỤNG-->
+<!--            </td>-->
+<!--            <td>Shebeen-->
+<!--            </td>-->
+<!--            <td>Số 46/76 An Dương, Tây Hồ, Hà Nội-->
+<!--            </td>-->
+<!--            <td></td>-->
+<!--            <td></td>-->
+
+<!--        </tr>-->
+<!--        <tr>-->
+<!--            <td>ỐNG HÚT NHỰA ĐÃ QUA SỬ DỤNG-->
+<!--            </td>-->
+<!--            <td>Home38-->
+<!--            </td>-->
+<!--            <td>số 38 Quảng Bá, Tây Hồ-->
+<!--            </td>-->
+<!--            <td></td>-->
+<!--            <td></td>-->
+
+<!--        </tr>-->
+<!--        <tr>-->
+<!--            <td>SÁCH GIÁO KHOA CŨ-->
+<!--            </td>-->
+<!--            <td>-->
+<!--            </td>-->
+<!--            <td>số 3B Phố Quang Trung, Hoàn Kiếm, HN-->
+<!--            </td>-->
+<!--            <td>0913005297-->
+<!--            </td>-->
+<!--            <td>NHẬN vào các ngày trong tuần vào giờ hành chính + Sáng T7 và BÁN vào 8:30 sáng T7 hàng tuần.-->
+<!--            </td>-->
+
+<!--        </tr>-->
+<!--        <tr>-->
+<!--            <td>SÁCH GIÁO KHOA CŨ-->
+<!--            </td>-->
+<!--            <td>-->
+<!--            </td>-->
+<!--            <td>Tổ 12 Thạch Bàn, đi vào cổng trường cấp 3 Thạch Bàn, khu tái định cư, đối diện đường sang Hanoi garden.-->
+<!--            </td>-->
+<!--            <td>098.3610.639-->
+<!--            </td>-->
+<!--            <td>NHẬN và BÁN vào 2h các chiều CN-->
+<!--            </td>-->
+
+<!--        </tr>-->
+<!--        <tr>-->
+<!--            <td>SÁCH GIÁO KHOA CŨ-->
+<!--            </td>-->
+<!--            <td>-->
+<!--            </td>-->
+<!--            <td>Quầy thuốc Hoàng Hà, Khu phố 12, Thị Trấn Hàng Trạm, Yên Thủy, Hòa Bình-->
+<!--            </td>-->
+<!--            <td>094 3836725-->
+<!--            </td>-->
+<!--            <td></td>-->
+
+<!--        </tr>-->
+<!--        <tr>-->
+<!--            <td>SÁCH GIÁO KHOA CŨ-->
+
+<!--            </td>-->
+<!--            <td>-->
+<!--            </td>-->
+<!--            <td>Ngách a1/126 Hoàng Quốc Việt-->
+
+<!--            </td>-->
+<!--            <td>0169.482.5982-->
+<!--            </td>-->
+<!--            <td></td>-->
+
+<!--        </tr>-->
+<!--        <tr>-->
+<!--            <td>THU GOM VỎ HỘP SỮA, VỎ ĐỒ UỐNG - TETRA PAK + ỐNG HÚT-->
+
+<!--            </td>-->
+<!--            <td>Tổng kho-->
+
+<!--            </td>-->
+<!--            <td>Ngõ 277 Đào Cam Mộc, thị trấn Đông Anh-->
+
+<!--            </td>-->
+<!--            <td>0911 599 595</td>-->
+<!--            <td></td>-->
+
+<!--        </tr>-->
+<!--        <tr>-->
+<!--            <td>THU GOM VỎ HỘP SỮA, VỎ ĐỒ UỐNG - TETRA PAK + ỐNG HÚT-->
+
+<!--            </td>-->
+<!--            <td>Tổng kho-->
+
+<!--            </td>-->
+<!--            <td>Nhà số 1, ngõ 73, đường An Đào C, Trâu Quỳ, Gia Lâm, Hà Nội-->
+
+
+<!--            </td>-->
+<!--            <td>0869.689.905-->
+<!--            </td>-->
+<!--            <td></td>-->
+
+<!--        </tr>-->
+<!--        <tr>-->
+<!--            <td>ỐNG HÚT NHỰA ĐÃ QUA SỬ DỤNG-->
+<!--            </td>-->
+<!--            <td>Grape Garden-->
+<!--            </td>-->
+<!--            <td>61 Trần Điền, Định Công, Hoàng Mai, Hà Nội-->
+<!--            </td>-->
+<!--            <td></td>-->
+<!--            <td></td>-->
+
+<!--        </tr>-->
+<!--        <tr>-->
+<!--            <td>ỐNG HÚT NHỰA ĐÃ QUA SỬ DỤNG-->
+<!--            </td>-->
+<!--            <td>Grape Garden-->
+<!--            </td>-->
+<!--            <td>61 Trần Điền, Định Công, Hoàng Mai, Hà Nội-->
+<!--            </td>-->
+<!--            <td></td>-->
+<!--            <td></td>-->
+
+<!--        </tr>-->
+<!--        <tr>-->
+<!--            <td>ỐNG HÚT NHỰA ĐÃ QUA SỬ DỤNG-->
+<!--            </td>-->
+<!--            <td>Grape Garden-->
+<!--            </td>-->
+<!--            <td>61 Trần Điền, Định Công, Hoàng Mai, Hà Nội-->
+<!--            </td>-->
+<!--            <td></td>-->
+<!--            <td></td>-->
+
+<!--        </tr>-->
+<!--        <tr>-->
+<!--            <td>ỐNG HÚT NHỰA ĐÃ QUA SỬ DỤNG-->
+<!--            </td>-->
+<!--            <td>Grape Garden-->
+<!--            </td>-->
+<!--            <td>61 Trần Điền, Định Công, Hoàng Mai, Hà Nội-->
+<!--            </td>-->
+<!--            <td></td>-->
+<!--            <td></td>-->
+
+<!--        </tr>-->
+<!--        <tr>-->
+<!--            <td>ỐNG HÚT NHỰA ĐÃ QUA SỬ DỤNG-->
+<!--            </td>-->
+<!--            <td>Grape Garden-->
+<!--            </td>-->
+<!--            <td>61 Trần Điền, Định Công, Hoàng Mai, Hà Nội-->
+<!--            </td>-->
+<!--            <td></td>-->
+<!--            <td></td>-->
+
+<!--        </tr>-->
+<!--    </table>-->
 
 
 </body>
