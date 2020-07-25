@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Homepage</title>
+    <link rel="icon" href="image/BCBIcon.png">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+
+    <!-- Carousel is built using Slick: https://kenwheeler.github.io/slick/-->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <style>
+        .slideshow-container{
+            height: 70vh;
+            width: 60vw;
+            display: inline-block;
+            left: 1%;
+        }
+
+        .slideshow-container > div{
+            margin-top: 1.5%;
+            position: center;
+            width: 100%;
+            height: 100%;
+            vertical-align: center;
+            horiz-align: center;
+        }
+
+        .slideshow-container img {
+            width: 100%;
+            height: 70vh;
+        }
+
+        .content{
+            margin-top: 0.5%;
+            float: right;
+            height: 100%;
+            width: 35vw;
+            display: inline-block;
+            margin-right: 1%;
+        }
+
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 46vh;
+            width: auto;
+            margin-top: -22px;
+            padding: 12px;
+            color: floralwhite;
+            background-color: transparent;
+            border-color: transparent;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 2px 2px 0;
+            user-select: none;
+        }
+
+        .prev{
+            right: auto;
+            left: 1.7%;
+        }
+        .next {
+            right: 38.6%;
+            left: auto;
+            border-radius: 2px 0 0 2px;
+        }
+
+        .prev:hover, .next:hover {
+            background-color: rgba(0,0,0,0.8);
+        }
+
+        .slick-dots {
+            top: 2%;
+        }
+        .content h3 {
+            background: transparent;
+        }
+        .content h3 a{
+            all: unset;
+            cursor: pointer;
+            color: deeppink;
+        }
+
+        .column {
+            float: left;
+            width: 50%;
+        }
+
+        .column a{
+            all: unset;
+        }
+
+        .column a:hover{
+            all: unset;
+            cursor: pointer;
+        }
+
+        .column img{
+            width: 80%;
+            height: 90px;
+        }
+    </style>
+
+</head>
+<body>
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+<div id="navBar"></div>
+
+<div>
+    <div class="slideshow-container">
+        <div><img src="image/ribbon.png"></div>
+        <div><img src="image/fact.png"></div>
+        <div><img src="image/journey.jpg"></div>
+        <div><img src="image/earlydetection.jpg"></div>
+    </div>
+    <a class="prev" >&#10094;</a>
+    <a class="next" >&#10095;</a>
+
+    <div class="content">
+        <h1 style="margin-right: 0px">Breast Cancer Buddies</h1>
+        <h3>You are not alone in the journey to fight cancer! </h3>
+        <h3>We won this battle because we had friends who understood what we were going through.
+            We had a community of survivors to back us up.<br> <br>
+            What we did not have was a website to facilitate such a community online. This is what Breast Cancer Buddies is. <br>
+            <br>
+            We provide <a href="Stories.html">Stories</a> of current patients and survivors,
+            <a href="Tips.html">Tips and Tricks</a> that everyone should know and a common <a href="Forum.html">Forum</a>
+            for everyone to chat about anything related to breast cancer.
+        </h3>
+        <h1>Useful Resources</h1>
+        <div class="row">
+
+            <div class="column">
+                <a class="link" href="https://www.nationalbreastcancer.org/"><img src="image/logo1.png"></a>
+                <br>
+                <a class="link" href="https://www.cancer.org/cancer/breast-cancer.html"><img src="image/logo2.jpg"></a>
+            </div>
+
+            <div class="column">
+                <a class="link" href="https://nyulangone.org/locations/high-risk-cancer-genetics-program/cancer-genetic-counseling-testing/"><img src="image/nyuhealth.jpg"></a>
+                <br>
+                <a class="link" href="https://www.contemporaryobgyn.net/breast-cancer/nccn-guidelines-genetic-testing"><img src="image/ob.jpg"></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<br> <br>
+
+<div class="footer">
+    <p>created by an, gio, jon, minh for csc 240 - 2020</p>
+</div>
+
+<script>
+    $.get("NavBar.html", function(data){
+        $("#navBar").replaceWith(data);
+    });
+
+    $(document).ready(function(){
+        $('.slideshow-container').slick({
+            accessibility: true,
+            autoplay: true,
+            autoplaySpeed: 3000,
+            arrows: true,
+            prevArrow: $('.prev'),
+            nextArrow: $('.next'),
+            fade: true,
+            infinite: true,
+            dots: true,
+            draggable: true,
+            speed: 300
+        });
+    });
+
+</script>
+</body>
+</html>

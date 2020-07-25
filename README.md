@@ -1,1 +1,3 @@
-# she-code-2020
+# Breast Cancer Buddies
+
+CSC 240  - Final Project
